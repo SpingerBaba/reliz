@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>SpingerPizzeria</title>
+    <link rel="stylesheet" href="buy.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">SpingerPizzeria</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">home</a></li>
+                <li><a href="#">pizza</a></li>
+                <li><a href="#">contacts</a></li>
+            </ul>
+        </nav>
+        <div class="nav-buy"><a href="buy.html">BUY</a></div>
+    </header>
+
+    <main class="cart-container">
+        <div class="cart-header">
+            <button class="big-buy-btn">BUY</button>
+        </div>
+        
+        <div id="pizza-item" class="cart-item">
+            <div class="small-img"></div>
+            <span class="pizza-name">Pizza name</span>
+            <div class="controls">
+                <button class="cnt-btn" id="plus">+</button>
+                <span class="count-val" id="qty">1</span>
+                <button class="cnt-btn" id="minus">-</button>
+            </div>
+            <span class="price"><span id="total-price">1234</span> hrn</span>
+            <button class="del-btn" id="delete-item">del</button>
+        </div>
+    </main>
+
+    <script src="buy-script.js"></script>
+</body>
+</html>

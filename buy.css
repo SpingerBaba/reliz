@@ -1,0 +1,105 @@
+body { 
+    margin: 0;
+    font-family: Arial; 
+    background-color: #d3d3d3; 
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.navbar { 
+    background: #4a4a4a; 
+    color: white; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 40px; 
+}
+
+.nav-links { 
+    list-style: none; 
+    display: flex; 
+    gap: 30px; 
+}
+
+.nav-links a, .nav-buy a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 18px; 
+}
+
+.cart-header { 
+    display: flex; 
+    justify-content: flex-end; 
+    padding: 20px 8%; 
+}
+.big-buy-btn { 
+    background: #a0a0a0; 
+    padding: 15px 60px; 
+    font-size: 26px; 
+    border-radius: 10px; 
+    border: 1px solid #777; 
+    cursor: pointer; 
+}
+
+.cart-item { 
+    background: #a0a0a0; 
+    width: 85%; 
+    margin: 0 auto; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 15px 35px; 
+    border-radius: 15px; 
+    border: 1px solid #777; 
+}
+
+.small-img { 
+    width: 60px; 
+    height: 60px; 
+    background: #d9d9d9; 
+    border-radius: 5px; 
+}
+
+.pizza-name { 
+    font-size: 28px; 
+    flex-grow: 1; 
+    margin-left: 25px; 
+}
+
+.controls { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.count-val { 
+    background: #d9d9d9; 
+    padding: 8px 25px; 
+    border-radius: 20px; 
+    font-size: 20px; 
+    border: 1px solid #777; 
+}
+
+.cnt-btn { 
+    background: none; 
+    border: none; 
+    font-size: 30px; 
+    cursor: pointer; 
+}
+
+.price { 
+    font-size: 20px; 
+    margin: 0 30px; 
+}
+
+.del-btn { 
+    background: #d9d9d9; 
+    border-radius: 50%; 
+    width: 40px; 
+    height: 40px; 
+    border: 1px solid #777; 
+    cursor: pointer; 
+}
