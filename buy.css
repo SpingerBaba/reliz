@@ -1,105 +1,116 @@
-body { 
+body {
     margin: 0;
-    font-family: Arial; 
-    background-color: #d3d3d3; 
+    font-family: Arial, sans-serif;
+    background-color: #a88585; 
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: normal;
+
+.navbar {
+    background-color: #600000; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 60px;
 }
 
-.navbar { 
-    background: #4a4a4a; 
-    color: white; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 15px 40px; 
-}
+.logo { font-size: 26px; }
 
-.nav-links { 
-    list-style: none; 
-    display: flex; 
-    gap: 30px; 
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
 }
 
 .nav-links a, .nav-buy a {
-    color: white; 
-    text-decoration: none; 
-    font-size: 18px; 
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 20px;
 }
 
-.cart-header { 
-    display: flex; 
-    justify-content: flex-end; 
-    padding: 20px 8%; 
-}
-.big-buy-btn { 
-    background: #a0a0a0; 
-    padding: 15px 60px; 
-    font-size: 26px; 
-    border-radius: 10px; 
-    border: 1px solid #777; 
-    cursor: pointer; 
+
+.cart-container {
+    padding: 40px 10%;
 }
 
-.cart-item { 
-    background: #a0a0a0; 
-    width: 85%; 
-    margin: 0 auto; 
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    padding: 15px 35px; 
-    border-radius: 15px; 
-    border: 1px solid #777; 
+.payment-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
 }
 
-.small-img { 
-    width: 60px; 
-    height: 60px; 
-    background: #d9d9d9; 
-    border-radius: 5px; 
+.pay-btn {
+    background-color: #600000; 
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
-.pizza-name { 
-    font-size: 28px; 
-    flex-grow: 1; 
-    margin-left: 25px; 
+
+.cart-item {
+    background-color: #a36d6d; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-radius: 15px;
+    border: 1px solid #7c5656;
 }
 
-.controls { 
-    display: flex; 
-    align-items: center; 
-    gap: 10px; 
+.cart-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    object-fit: cover;
 }
 
-.count-val { 
-    background: #d9d9d9; 
-    padding: 8px 25px; 
-    border-radius: 20px; 
-    font-size: 20px; 
-    border: 1px solid #777; 
+.pizza-title {
+    color: white;
+    font-size: 32px;
+    flex-grow: 1;
+    margin-left: 30px;
 }
 
-.cnt-btn { 
-    background: none; 
-    border: none; 
-    font-size: 30px; 
-    cursor: pointer; 
+
+.counter-block {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-.price { 
-    font-size: 20px; 
-    margin: 0 30px; 
+.count-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
 }
 
-.del-btn { 
-    background: #d9d9d9; 
-    border-radius: 50%; 
-    width: 40px; 
-    height: 40px; 
-    border: 1px solid #777; 
-    cursor: pointer; 
+.count-value {
+    background-color: #d9d9d9;
+    padding: 8px 25px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.price-text {
+    color: white;
+    font-size: 22px;
+    margin: 0 40px;
+}
+
+
+.delete-btn {
+    background-color: #d9d9d9;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }

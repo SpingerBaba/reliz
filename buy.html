@@ -2,10 +2,12 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>SpingerPizzeria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpingerPizzeria - Кошик</title>
     <link rel="stylesheet" href="buy.css">
 </head>
 <body>
+
     <header class="navbar">
         <div class="logo">SpingerPizzeria</div>
         <nav>
@@ -19,20 +21,24 @@
     </header>
 
     <main class="cart-container">
-        <div class="cart-header">
-            <button class="big-buy-btn">BUY</button>
+        <div class="payment-header">
+            <button class="pay-btn">Оплата</button>
         </div>
-        
+
         <div id="pizza-item" class="cart-item">
-            <div class="small-img"></div>
-            <span class="pizza-name">Pizza name</span>
-            <div class="controls">
-                <button class="cnt-btn" id="plus">+</button>
-                <span class="count-val" id="qty">1</span>
-                <button class="cnt-btn" id="minus">-</button>
+            <img src="images/divo.jpg" alt="Диво піца" class="cart-img">
+            
+            <span class="pizza-title">Диво піца</span>
+            
+            <div class="counter-block">
+                <button class="count-btn" id="plus">+</button>
+                <span class="count-value" id="qty">1</span>
+                <button class="count-btn" id="minus">-</button>
             </div>
-            <span class="price"><span id="total-price">1234</span> hrn</span>
-            <button class="del-btn" id="delete-item">del</button>
+
+            <span class="price-text"><span id="total-price">1234</span> hrn</span>
+
+            <button class="delete-btn" id="delete-item">Видалити</button>
         </div>
     </main>
 
