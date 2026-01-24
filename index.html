@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpingerPizzeria - Головна</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -21,6 +22,7 @@
     </header>
 
     <main class="container">
+        <div class="content-wrapper">
         <div class="card-grid">
             
             <div class="card">
@@ -87,7 +89,75 @@
             </div>
 
         </div>
+        <aside class="filter-sidebar">
+            <h3>Фільтр:</h3>
+            <select id="pizza-filter" onchange="sortPizzas()">
+                <option value="default">За замовчуванням</option>
+                <option value="alphabet">За алфавітом (А-Я)</option>
+                <option value="price-desc">Ціна: від дорогої</option>
+                <option value="price-asc">Ціна: від дешевої</option>
+            </select>
+        </aside>
+        </div>
+        <div class="modal-overlay" id="contacts-modal" style="display: none;">
+            <div class="contact-modal">
+                <header class="modal-header">
+                    <h2 class="contact-title">Наші контакти</h2>
+                    <span class="close-button" id="close-contacts">&times;</span>
+                </header>
+                <div class="modal-content">
+                    <a href="https:" class="link-for-social">
+                        <div class="social-link">
+                            <i class="fab fa-instagram social-icon"></i>
+                            <span class="social-name">@exemple</span>
+                        </div>
+                    </a>
+                    <a href="https:" class="link-for-social">
+                        <div class="social-link">
+                            <i class="fab fa-telegram-plane social-icon"></i>
+                            <span class="social-name">@exemple</span>
+                        </div>
+                    </a>
+                    <a href="https:" class="link-for-social">
+                        <div class="social-link">
+                            <i class="fab fa-facebook social-icon"></i>
+                            <span class="social-name">@exemple</span>
+                        </div>
+                    </a>
+                    <a href="tel:+380973020069" class="link-for-social">
+                        <div class="social-link">
+                            <i class="fas fa-phone social-icon"></i>
+                            <span class="social-name">Тел.: 098 XXX XX XX</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
     </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section logo-section">
+                <div class="logo">SpingerPizzeria</div>
+                <p>Найкраща піца у вашому місті з 2026 року.</p>
+            </div>
+            
+            <div class="footer-section links-section">
+                <h4>Навігація</h4>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="#">Піца</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact-section">
+                <h4>Контакти</h4>
+                <p>📍 вулиця Гагаріна, 10, Тячів, Закарпатська область, 90500</p>
+                <p>📞 +380 97 302 00 69</p>
+                <p>✉️ kiril.galica.uy@gmail.com</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
