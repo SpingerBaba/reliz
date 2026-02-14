@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpingerPizzeria - Головна</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
 
     <header class="navbar">
+        <div class="nav-left">
         <div class="logo">SpingerPizzeria</div>
-        <nav>
+        <div class="search-box">
+            <input type="text" id="pizza-search" placeholder="Пошук піци..." onkeyup="searchPizza()">
+        </div>
+    </div>
+        <nav class="nav-center">
             <ul class="nav-links">
                 <li><a href="index.html">home</a></li>
-                <li><a href="#">pizza</a></li>
                 <li><a href="#">contacts</a></li>
             </ul>
         </nav>
@@ -29,63 +34,63 @@
                 <img src="images/bazilik.jpg" alt="Піца з базеліком" class="pizza-img">
                 <div class="pizza-info">Піца з базеліком</div>
                 <div class="price">1123 ₴</div>
-                <a href="buy.html" class="buy-btn">Купити</a>
+                <a href="javascript:void(0)" class="buy-btn" onclick="addToCart(this)">Купити</a>
             </div>
 
             <div class="card">
                 <img src="images/pepperoni.jpg" alt="Пепероні" class="pizza-img">
                 <div class="pizza-info">Пепероні</div>
                 <div class="price">923 ₴</div>
-                <a href="buy.html" class="buy-btn">Купити</a>
+                <a href="javascript:void(0)" class="buy-btn" onclick="addToCart(this)">Купити</a>
             </div>
 
             <div class="card">
                 <img src="images/divo.jpg" alt="Диво піца" class="pizza-img">
                 <div class="pizza-info">Диво піца</div>
                 <div class="price">9999 ₴</div>
-                <a href="buy.html" class="buy-btn">Купити</a>
+                <a href="javascript:void(0)" class="buy-btn" onclick="addToCart(this)">Купити</a>
             </div>
 
             <div class="card">
                 <img src="images/grib.jpg" alt="Грибна" class="pizza-img">
                 <div class="pizza-info">Грибна</div>
                 <div class="price">850 ₴</div>
-                <a href="buy.html" class="buy-btn">Купити</a>
+                <a href="javascript:void(0)" class="buy-btn" onclick="addToCart(this)">Купити</a>
             </div>
 
             <div class="card">
                 <img src="images/Meat.jpg" alt="М'ясна" class="pizza-img">
                 <div class="pizza-info">М'ясна</div>
                 <div class="price">1200 ₴</div>
-                <a href="buy.html" class="buy-btn">Купити</a>
+                <a href="javascript:void(0)" class="buy-btn" onclick="addToCart(this)">Купити</a>>
             </div>
 
             <div class="card">
                 <img src="images/gavai.jpg" alt="Гавайська" class="pizza-img">
                 <div class="pizza-info">Гавайська</div>
                 <div class="price">980 ₴</div>
-                <a href="buy.html" class="buy-btn">Купити</a>
+                <a href="javascript:void(0)" class="buy-btn" onclick="addToCart(this)">Купити</a>>
             </div>
 
             <div class="card">
                 <img src="images/chesse.jpg" alt="4 Сири" class="pizza-img">
                 <div class="pizza-info">4 Сири</div>
                 <div class="price">1050 ₴</div>
-                <a href="buy.html" class="buy-btn">Купити</a>
+                <a href="javascript:void(0)" class="buy-btn" onclick="addToCart(this)">Купити</a>>
             </div>
 
             <div class="card">
                 <img src="images/vegetables.jpg" alt="Овочева" class="pizza-img">
                 <div class="pizza-info">Овочева</div>
                 <div class="price">790 ₴</div>
-                <a href="buy.html" class="buy-btn">Купити</a>
+                <a href="javascript:void(0)" class="buy-btn" onclick="addToCart(this)">Купити</a>>
             </div>
 
             <div class="card">
                 <img src="images/hot.jpg" alt="Гостра" class="pizza-img">
                 <div class="pizza-info">Гостра</div>
                 <div class="price">1100 ₴</div>
-                <a href="buy.html" class="buy-btn">Купити</a>
+                <a href="javascript:void(0)" class="buy-btn" onclick="addToCart(this)">Купити</a>>
             </div>
 
         </div>
