@@ -1,4 +1,3 @@
-// Перевірка наявності елементів, щоб уникнути помилок у консолі
 const plusBtn = document.getElementById('plus');
 const minusBtn = document.getElementById('minus');
 const qtyText = document.getElementById('qty');
@@ -38,7 +37,6 @@ function updateDisplay() {
     }
 }
 
-// Рендеринг реального кошика
 document.addEventListener('DOMContentLoaded', function() {
     renderCart();
 });
@@ -104,14 +102,12 @@ function openPaymentModal() {
     document.getElementById('payment-modal').style.display = 'flex';
 }
 
-// Закриття вікна
 document.getElementById('close-payment').onclick = function() {
     document.getElementById('payment-modal').style.display = 'none';
-    // Скидаємо текст, якщо вікно закрили
     resetModal();
 };
 
-// Обробка підтвердження
+
 document.getElementById('confirm-order').onclick = function() {
     const phoneInput = document.getElementById('user-phone');
     const modalBody = document.getElementById('modal-body');
@@ -121,7 +117,6 @@ document.getElementById('confirm-order').onclick = function() {
         return;
     }
 
-    // Змінюємо вміст вікна на подяку
     modalBody.innerHTML = `
     <div style="text-align: center; padding: 40px;">
         <h2 style="color: #600000; font-size: 35px; margin-bottom: 15px;">Дякуємо!</h2>
@@ -132,37 +127,37 @@ document.getElementById('confirm-order').onclick = function() {
 };
 
 function finalizeOrder() {
-    // Очищуємо кошик після успішного замовлення
     localStorage.removeItem('pizzaCart');
-    // Закриваємо модалку та оновлюємо сторінку
     window.location.reload();
 }
 
 function resetModal() {
-    // Функція для повернення початкового вигляду модалки (якщо потрібно)
     location.reload(); 
 }
 
-// const contactsLink = document.getElementById('contacts-link');
-// const contactsModal = document.getElementById('contacts-modal');
-// const closeContactsBtn = document.getElementById('close-contacts');
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const contactsLink = document.getElementById('contacts-link');
+    const contactsModal = document.getElementById('contacts-modal');
+    const closeContactsBtn = document.getElementById('close-contacts');
 
-// if (contactsLink && contactsModal) {
-//     contactsLink.addEventListener('click', function(e) {
-//         e.preventDefault();
-//         contactsModal.style.display = 'flex'; // Відкриваємо
-//     });
-// }
+    if (contactsLink && contactsModal) {
+        contactsLink.onclick = function(e) {
+            e.preventDefault();
+            console.log("Клік по контактах спрацював!"); 
+            contactsModal.style.display = 'flex';
+        };
+    }
 
-// if (closeContactsBtn) {
-//     closeContactsBtn.addEventListener('click', function() {
-//         contactsModal.style.display = 'none'; // Закриваємо на хрестик
-//     });
-// }
+    if (closeContactsBtn) {
+        closeContactsBtn.onclick = function() {
+            contactsModal.style.display = 'none';
+        };
+    }
 
-// // Закриття при кліку на фон
-// window.addEventListener('click', function(e) {
-//     if (e.target === contactsModal) {
-//         contactsModal.style.display = 'none';
-//     }
-// });
+    window.onclick = function(e) {
+        if (e.target === contactsModal) {
+            contactsModal.style.display = 'none';
+        }
+    };
+});

@@ -20,7 +20,7 @@
         <nav class="nav-center">
             <ul class="nav-links">
                 <li><a href="index.html">home</a></li>
-                <li><a href="#">contacts</a></li>
+                <li><a href="javascript:void(0)" id="contacts-link">contacts</a></li>
             </ul>
         </nav>
         <div class="nav-buy"><a href="buy.html">BUY</a></div>
@@ -104,39 +104,7 @@
             </select>
         </aside>
         </div>
-        <div class="modal-overlay" id="contacts-modal" style="display: none;">
-            <div class="contact-modal">
-                <header class="modal-header">
-                    <h2 class="contact-title">Наші контакти</h2>
-                    <span class="close-button" id="close-contacts">&times;</span>
-                </header>
-                <div class="modal-content">
-                    <a href="https:" class="link-for-social">
-                        <div class="social-link">
-                            <i class="fab fa-instagram social-icon"></i>
-                            <span class="social-name">@exemple</span>
-                        </div>
-                    </a>
-                    <a href="https:" class="link-for-social">
-                        <div class="social-link">
-                            <i class="fab fa-telegram-plane social-icon"></i>
-                            <span class="social-name">@exemple</span>
-                        </div>
-                    </a>
-                    <a href="https:" class="link-for-social">
-                        <div class="social-link">
-                            <i class="fab fa-facebook social-icon"></i>
-                            <span class="social-name">@exemple</span>
-                        </div>
-                    </a>
-                    <a href="tel:+380973020069" class="link-for-social">
-                        <div class="social-link">
-                            <i class="fas fa-phone social-icon"></i>
-                            <span class="social-name">Тел.: 098 XXX XX XX</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
+
     </main>
 
     <footer class="footer">
@@ -163,6 +131,33 @@
             </div>
         </div>
     </footer>
-
+<div class="modal-overlay" id="contacts-modal" style="display: none;">
+    <div class="contact-modal">
+        <header class="modal-header">
+            <h2 class="contact-title">Наші контакти</h2>
+            <span class="close-button" id="close-contacts">&times;</span>
+        </header>
+        <div class="modal-content">
+            <a href="https://www.instagram.com/logika_it_school/" class="link-for-social" target="_blank">
+                <div class="social-link">
+                    <i class="fab fa-instagram social-icon"></i>
+                    <span class="social-name">@logika_it_school</span>
+                </div>
+            </a>
+            <a href="https://t.me" class="link-for-social" target="_blank">
+                <div class="social-link">
+                    <i class="fab fa-telegram-plane social-icon"></i>
+                    <span class="social-name">@spinger_pizzeria</span>
+                </div>
+            </a>
+            <a href="tel:+380973020069" class="link-for-social">
+                <div class="social-link">
+                    <i class="fas fa-phone social-icon"></i>
+                    <span class="social-name">097 302 00 69</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
 </body>
 </html>
